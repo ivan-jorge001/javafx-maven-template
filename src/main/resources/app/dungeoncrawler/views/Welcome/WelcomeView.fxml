@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.dungeoncrawler.views.Welcome.WelcomeViewController"
+            stylesheets="@WelcomeView.css"
+>
+    <children>
+        <Label GridPane.columnIndex="0" styleClass="helloworldText" text="WELCOME" />
+        <TextField GridPane.columnIndex="2" fx:id="textfield"/>
+        <Button GridPane.columnIndex="4" fx:id="buttonNavigate" text="Go To Configuration" />
+        <Label text="${textfield.text}" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" />
+
+    </children>
+</GridPane>
